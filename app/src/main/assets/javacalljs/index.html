@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>java调用js</title>
+		<script type="text/javascript">
+			function noParamter() {
+				alert("我是js无参函数");
+			}
+			
+			function yesParamter(info) {
+				alert("来自java的信息：" + info);
+			}
+			
+			function returnResult() {
+				var a = "我处理完了。"
+				// 将结果返回给Android
+				window.Result.getResult(a);
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="JSBridge.js" ></script>
+	</head>
+	<body>
+		<button onclick="jsCallAndroid('JSBridge', 'showToast',
+			{'msg':'hello I come from js.'},function(res) {alert(JSON.stringify(res))})">Js调用Android</button>
+	</body>
+</html>
